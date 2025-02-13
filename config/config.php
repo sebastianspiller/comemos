@@ -1,11 +1,11 @@
 <?php
 // Konfigurationsdatei
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'root');
 define('DB_NAME', 'comemos');
 
-define('BASE_URL', 'http://localhost/comemos');
+define('BASE_URL', 'http://localhost:3000/');
 define('SITE_NAME', 'Comemos');
 
 // Fehlerberichterstattung (in Produktion auf 0 setzen)

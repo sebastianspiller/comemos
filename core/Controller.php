@@ -1,5 +1,5 @@
 <?php
-require_once 'core/Theme.php';
+require_once __DIR__ . '/Theme.php';
 
 class Controller {
     protected $theme;
@@ -8,5 +8,12 @@ class Controller {
         $this->theme = new Theme();
     }
 
-    // ... existing code ...
+    protected function model($model) {
+        require_once __DIR__ . '/../../models/' . $model . '.php';
+        return new $model();
+    }
+
+    protected function view($view, $data = []) {
+        require_once $this->theme->getView($view);
+    }
 } 
