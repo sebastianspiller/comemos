@@ -1,0 +1,10 @@
+{
+    "name": "Default Theme",
+    "version": "1.0",
+    "author": "Ihr Name",
+    "description": "Das Standard-Theme für die Community-Plattform",
+    "supports": {
+        "custom-header": true,
+        "custom-footer": true
+    }
+} 
